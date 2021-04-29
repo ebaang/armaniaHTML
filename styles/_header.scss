@@ -1,0 +1,111 @@
+.header {
+   display: grid;
+   grid-template-columns: 400px 1fr;
+
+   // &__logoWrapper {
+   //    clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+   // }
+   &__logo {
+      width: 166px;
+   }
+   &__left {
+      clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+      margin-right: -14rem;
+      background: $primary;
+      display: flex;
+      align-items: center;
+      padding-left: 15rem;
+      // padding-right: 10rem;
+   }
+   &__right {
+      // clip-path: polygon(3.2% 0, 100% 0%, 100% 100%, 0% 100%);
+      padding-left: 12rem;
+   }
+
+   &__top {
+      clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+      background-color: $secondary;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--promo {
+         color: white;
+         padding-left: 4rem;
+         &--span {
+            color: $primary;
+         }
+      }
+      &--login {
+         display: flex;
+         gap: 1rem;
+         color: white;
+         padding-right: 10rem;
+         &--signin {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+         }
+      }
+   }
+
+   &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &--list {
+         display: flex;
+         gap: 4rem;
+         padding-top: 2rem;
+         padding-bottom: 2rem;
+         padding-left: 4rem;
+      }
+      &--item {
+         font-family: 'Rajdhani', sans-serif;
+         font-weight: 700;
+         font-size: 20px;
+         color: $grayDark;
+         text-transform: uppercase;
+         cursor: pointer;
+         transition: all 0.3s ease-in-out;
+         &:hover {
+            color: $primary;
+         }
+      }
+
+      &--action {
+         display: flex;
+         gap: 3rem;
+         align-items: center;
+         padding-right: 10rem;
+         &--icon {
+            font-size: 35px;
+            color: $grayDark;
+            cursor: pointer;
+            &:hover {
+               color: $primary;
+            }
+         }
+      }
+
+      &--hotline {
+         display: flex;
+         gap: 3rem;
+         align-items: center;
+         &--number {
+            color: $primary;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+         }
+         &--icon {
+            font-size: 35px;
+            color: $grayDark;
+         }
+         &--wrapper {
+            display: flex;
+            flex-direction: column;
+         }
+      }
+   }
+}
