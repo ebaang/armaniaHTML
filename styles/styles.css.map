@@ -7,7 +7,8 @@
         "_global.scss",
         "_helper.scss",
         "_header.scss",
-        "_hero.scss"
+        "_hero.scss",
+        "_features.scss"
     ],
     "names": [],
     "file": "styles.css"
