@@ -663,4 +663,41 @@ table {
   color: #fbb71c;
   font-size: 2.5rem;
 }
+
+.features {
+  height: 52rem;
+  padding-top: 4rem;
+  background-size: 100% 100%;
+}
+
+.features__content--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+}
+
+.features__heading {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.features__heading--paragraph {
+  color: white;
+}
+
+.features__heading--price {
+  color: #fbb71c;
+}
+
+.features__subheading {
+  color: white;
+}
 /*# sourceMappingURL=styles.css.map */
