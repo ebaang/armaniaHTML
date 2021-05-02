@@ -670,34 +670,121 @@ table {
   background-size: 100% 100%;
 }
 
+.features__content {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .features__content--list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  max-width: 1800px;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   gap: 3rem;
+}
+
+.features__content--item {
+  position: relative;
+}
+
+.features__content--item--photo {
+  position: absolute;
+}
+
+.features__content--item--wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 370px;
 }
 
 .features__heading {
   color: white;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
+  font-family: 'Rajdhani';
+  padding-left: 3rem;
+  padding-top: 3px;
 }
 
 .features__heading--paragraph {
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 3px;
   color: white;
+  font-size: 15.5px;
+  max-width: 260px;
+  line-height: 23px;
+  font-family: 'Open Sans';
 }
 
-.features__heading--price {
+.features__heading--paragraph--3 {
+  padding-top: 4rem;
+  padding-left: 3rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Rajdhani';
+  font-size: 16.5px;
+}
+
+.features__heading--paragraph--price {
+  padding-left: 1rem;
   color: #fbb71c;
+  font-size: 1.34rem;
+  margin: -24.5px;
+  font-family: 'Rajdhani';
+  font-weight: 900;
+}
+
+.features__heading--additional {
+  padding-left: 3rem;
+  padding-top: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.features__heading--additional--span {
+  padding-left: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.features__heading--saveUp {
+  margin-top: 1.5rem;
+  margin-left: 3rem;
+  margin-bottom: 1.4rem;
+  background-color: #fbb71c;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #292727;
 }
 
 .features__subheading {
+  display: inline-block;
+  padding-top: 3.3rem;
+  padding-left: 3rem;
   color: white;
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-size: 2.3rem;
+  line-height: 33px;
+  letter-spacing: 1px;
+}
+
+.features__cta {
+  padding-left: 3rem;
+  padding-top: 1rem;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -4,29 +4,112 @@
    background-size: 100% 100%;
 
    &__content {
+      width: max-content;
+      margin-left: auto;
+      margin-right: auto;
       &--list {
-         display: flex;
+         max-width: 1800px;
+         display: grid;
+         // justify-content: center;
+         // justify-content: space-around;
          grid-template-columns: 1fr 1fr 1fr;
-         justify-content: center;
          gap: 3rem;
-         //  justify-content: space-around;
-         //  background-size: 100% 100%;
+      }
+      &--item {
+         position: relative;
+
+         &--photo {
+            position: absolute;
+         }
+
+         &--wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 370px;
+         }
       }
    }
 
    &__heading {
       color: white;
       text-transform: uppercase;
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 700;
+      font-family: 'Rajdhani';
+      padding-left: 3rem;
+      padding-top: 3px;
+
       &--paragraph {
+         padding-left: 3rem;
+         padding-top: 1rem;
+         padding-bottom: 3px;
          color: white;
+         font-size: 15.5px;
+         max-width: 260px;
+         line-height: 23px;
+         font-family: 'Open Sans';
+         &--3 {
+            padding-top: 4rem;
+            padding-left: 3rem;
+            text-transform: uppercase;
+            color: white;
+            font-family: 'Rajdhani';
+            font-size: 16.5px;
+         }
+
+         &--price {
+            padding-left: 1rem;
+            color: $primary;
+            font-size: 1.34rem;
+            margin: -24.5px;
+            font-family: 'Rajdhani';
+            font-weight: 900;
+         }
       }
-      &--price {
-         color: $primary;
+      &--additional {
+         padding-left: 3rem;
+         padding-top: 2rem;
+         color: white;
+         text-transform: uppercase;
+         &--span {
+            padding-left: 2rem;
+            color: white;
+            text-transform: uppercase;
+         }
+      }
+
+      &--saveUp {
+         margin-top: 1.5rem;
+         margin-left: 3rem;
+         margin-bottom: 1.4rem;
+         background-color: $primary;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-top: 0;
+         padding-bottom: 0;
+         display: inline-block;
+         text-transform: uppercase;
+         font-family: 'Rajdhani';
+         font-weight: 900;
+         font-size: 1.2rem;
+         color: $grayDark;
       }
    }
    &__subheading {
+      display: inline-block;
+      padding-top: 3.3rem;
+      padding-left: 3rem;
       color: white;
+      text-transform: uppercase;
+      font-family: 'Rajdhani';
+      font-size: 2.3rem;
+      line-height: 33px;
+      letter-spacing: 1px;
+   }
+
+   &__cta {
+      padding-left: 3rem;
+      padding-top: 1rem;
    }
 }
