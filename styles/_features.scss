@@ -2,9 +2,9 @@
    height: 52rem;
    padding-top: 4rem;
    background-size: 100% 100%;
+   position: relative;
 
    &__content {
-      width: max-content;
       margin-left: auto;
       margin-right: auto;
       &--list {
@@ -17,15 +17,72 @@
       }
       &--item {
          position: relative;
+         overflow: hidden;
+         height: 280px;
+         cursor: pointer;
+         // background: red;
 
+         transition: all 0.3s ease-in-out;
+
+         &:nth-child(1) {
+            .features__content--item--photo {
+               background-image: url(../img/carpart-banner-1.jpg);
+            }
+         }
+         &:nth-child(2) {
+            .features__content--item--photo {
+               background-image: url(../img/carpart-banner-2.jpg);
+            }
+         }
+         &:nth-child(3) {
+            .features__content--item--photo {
+               background-image: url(../img/carpart-banner-3.jpg);
+            }
+         }
+
+         &:hover {
+            .features__content--item--photo {
+               transform: scale(1.1);
+            }
+            .features__content--item--overlay {
+               width: 77%;
+            }
+         }
          &--photo {
+            transition: all 0.3s ease-in-out;
+
             position: absolute;
+
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            // &:nth-child(1) {
+            //    background-image: url(../img/carpart-banner-1.jpg);
+            // }
+            // &:nth-child(2) {
+            //    background-image: url(../img/carpart-banner-2.jpg);
+            // }
+            // &:nth-child(3) {
+            //    background-image: url(../img/carpart-banner-3.jpg);
+            // }
+         }
+
+         &--overlay {
+            transition: all 0.3s ease-in-out;
+            top: 0;
+            background: $secondary;
+            opacity: 0.5;
+            position: absolute;
+            height: 100%;
+            width: 65%;
+            clip-path: polygon(66% 0, 100% 40%, 59% 100%, 0 100%, 0 0);
          }
 
          &--wrapper {
-            position: absolute;
-            top: 0;
-            left: 0;
+            position: relative;
+            height: 100%;
             max-width: 370px;
          }
       }
@@ -38,19 +95,19 @@
       font-weight: 700;
       font-family: 'Rajdhani';
       padding-left: 3rem;
-      padding-top: 3px;
+      padding-top: 0;
 
       &--paragraph {
          padding-left: 3rem;
          padding-top: 1rem;
-         padding-bottom: 3px;
+         padding-bottom: 1.95rem;
          color: white;
          font-size: 15.5px;
          max-width: 260px;
          line-height: 23px;
          font-family: 'Open Sans';
          &--3 {
-            padding-top: 4rem;
+            padding-top: 2.8rem;
             padding-left: 3rem;
             text-transform: uppercase;
             color: white;
@@ -59,12 +116,19 @@
          }
 
          &--price {
-            padding-left: 1rem;
+            padding-left: 2rem;
             color: $primary;
             font-size: 1.34rem;
             margin: -24.5px;
             font-family: 'Rajdhani';
             font-weight: 900;
+            &--from {
+               padding-top: 1rem;
+               padding-bottom: 1.1rem;
+               padding-left: 3rem;
+               color: white;
+               font-size: 15.5px;
+            }
          }
       }
       &--additional {
@@ -72,15 +136,18 @@
          padding-top: 2rem;
          color: white;
          text-transform: uppercase;
+         line-height: 10px;
+
          &--span {
-            padding-left: 2rem;
+            padding-left: 3rem;
             color: white;
             text-transform: uppercase;
+            padding-bottom: 2rem;
          }
       }
 
       &--saveUp {
-         margin-top: 1.5rem;
+         margin-top: 3rem;
          margin-left: 3rem;
          margin-bottom: 1.4rem;
          background-color: $primary;
@@ -92,7 +159,7 @@
          text-transform: uppercase;
          font-family: 'Rajdhani';
          font-weight: 900;
-         font-size: 1.2rem;
+         font-size: 1rem;
          color: $grayDark;
       }
    }
@@ -109,7 +176,18 @@
    }
 
    &__cta {
-      padding-left: 3rem;
+      display: inline;
+      margin-left: 3rem;
       padding-top: 1rem;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-bottom-style: solid;
+      border-bottom-width: 2.5px;
+      color: $primary;
+      &--btn {
+         color: white;
+      }
    }
 }
