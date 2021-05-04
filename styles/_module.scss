@@ -1,0 +1,56 @@
+.module {
+   position: relative;
+   &__wrapper {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+   }
+   height: 30rem;
+
+   &__left {
+      // grid-template-columns: 200px;
+      background-color: $primary;
+      padding-left: 2.5rem;
+
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-size: 1.7rem;
+      font-family: 'Rajdhani';
+      font-weight: 900;
+      text-transform: uppercase;
+      color: $grayDark;
+      clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+   }
+
+   &__tabs {
+      background-color: $secondary;
+      margin-left: -5rem;
+      padding-left: 7rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-family: 'Rajdhani';
+      font-size: 1.2rem;
+
+      &--list {
+         display: flex;
+
+         gap: 6rem;
+         // padding-right: 40rem;
+
+         color: white;
+      }
+   }
+
+   &__cards {
+      &--list {
+         display: grid;
+
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+         // display: flex;
+
+         gap: 0.5rem;
+      }
+
+      &--item {
+      }
+   }
+}

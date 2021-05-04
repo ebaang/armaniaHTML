@@ -670,15 +670,57 @@ table {
 }
 
 .features {
-  height: 52rem;
   padding-top: 4rem;
   background-size: 100% 100%;
   position: relative;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 550px) {
+  .features {
+    padding-top: 25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .features {
+    padding-top: 30rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .features {
+    padding-top: 30rem;
+  }
+}
+
+@media (max-width: 485px) {
+  .features {
+    padding-top: 19rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .features {
+    padding-top: 24rem;
+  }
+}
+
+@media (max-width: 395px) {
+  .features {
+    padding-top: 27rem;
+  }
 }
 
 .features__content {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 510px) {
+  .features__content {
+    background-position: center;
+  }
 }
 
 .features__content--list {
@@ -688,6 +730,14 @@ table {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
+}
+
+@media (max-width: 765px) {
+  .features__content--list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .features__content--item {
@@ -760,6 +810,18 @@ table {
   padding-top: 0;
 }
 
+@media (max-width: 900px) {
+  .features__heading {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .features__heading {
+    font: size 1.5rem;
+  }
+}
+
 .features__heading--paragraph {
   padding-left: 3rem;
   padding-top: 1rem;
@@ -771,6 +833,13 @@ table {
   font-family: 'Open Sans';
 }
 
+@media (max-width: 900px) {
+  .features__heading--paragraph {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 .features__heading--paragraph--3 {
   padding-top: 2.8rem;
   padding-left: 3rem;
@@ -778,6 +847,12 @@ table {
   color: white;
   font-family: 'Rajdhani';
   font-size: 16.5px;
+}
+
+@media (max-width: 900px) {
+  .features__heading--paragraph--3 {
+    padding-left: 1rem;
+  }
 }
 
 .features__heading--paragraph--price {
@@ -797,6 +872,12 @@ table {
   font-size: 15.5px;
 }
 
+@media (max-width: 900px) {
+  .features__heading--paragraph--price--from {
+    padding-left: 1rem;
+  }
+}
+
 .features__heading--additional {
   padding-left: 3rem;
   padding-top: 2rem;
@@ -805,11 +886,23 @@ table {
   line-height: 10px;
 }
 
+@media (max-width: 900px) {
+  .features__heading--additional {
+    padding-left: 1rem;
+  }
+}
+
 .features__heading--additional--span {
   padding-left: 3rem;
   color: white;
   text-transform: uppercase;
   padding-bottom: 2rem;
+}
+
+@media (max-width: 900px) {
+  .features__heading--additional--span {
+    padding-left: 1rem;
+  }
 }
 
 .features__heading--saveUp {
@@ -829,6 +922,13 @@ table {
   color: #292727;
 }
 
+@media (max-width: 900px) {
+  .features__heading--saveUp {
+    padding-left: 1rem;
+    margin-left: 1rem;
+  }
+}
+
 .features__subheading {
   display: inline-block;
   padding-top: 3.3rem;
@@ -839,6 +939,25 @@ table {
   font-size: 2.3rem;
   line-height: 33px;
   letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .features__subheading {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .features__subheading {
+    width: 50%;
+  }
+}
+
+@media (max-width: 470px) {
+  .features__subheading {
+    font-size: 1.5rem;
+    width: 50%;
+  }
 }
 
 .features__cta {
@@ -854,7 +973,65 @@ table {
   color: #fbb71c;
 }
 
+@media (max-width: 900px) {
+  .features__cta {
+    margin-left: 1rem;
+  }
+}
+
 .features__cta--btn {
   color: white;
+}
+
+.module {
+  position: relative;
+  height: 30rem;
+}
+
+.module__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 320px 1fr;
+      grid-template-columns: 320px 1fr;
+}
+
+.module__left {
+  background-color: #fbb71c;
+  padding-left: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-family: 'Rajdhani';
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #292727;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.module__tabs {
+  background-color: #0c1555;
+  margin-left: -5rem;
+  padding-left: 7rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: 'Rajdhani';
+  font-size: 1.2rem;
+}
+
+.module__tabs--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6rem;
+  color: white;
+}
+
+.module__cards--list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
 }
 /*# sourceMappingURL=styles.css.map */
