@@ -105,9 +105,12 @@
       background-color: $primary;
       padding: 1rem 4rem;
       border-radius: 0;
-      transform: skewX(-20deg);
+      transition: all 0.2s ease-in-out;
+      transform: skew(-20deg);
       cursor: pointer;
-
+      &:hover {
+         transform: skew(0deg);
+      }
       @media (max-width: 550px) {
          font-size: 14px;
 
@@ -116,9 +119,13 @@
 
       &--btn {
          color: #222222;
-
-         transform: skewX(20deg);
+         transition: all 0.2s ease-in-out;
          display: inline-block;
+         transform: skew(20deg);
+
+         &:hover {
+            transform: skew(0deg);
+         }
       }
       // & :hover {
       //    transform: skewX(110deg);
