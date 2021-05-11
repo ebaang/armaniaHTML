@@ -1,32 +1,43 @@
 .bannerMid {
    padding-top: 1rem;
    padding-bottom: 5rem;
+   // overflow: hidden;
 
-   //    margin-left: auto;
+   // @media (max-width: 1900px) {
    //    margin-right: auto;
+   //    margin-left: auto;
+   // }
 
    &__wrapper {
       display: grid;
-      grid-template-columns: 600px 1fr;
+      grid-template-columns: 700px 1fr;
 
       justify-content: center;
-
+      // overflow: hidden;
       &:hover .bannerMid__cta {
          transform: skew(0deg);
+         // overflow: hidden;
          &--btn {
             transform: skew(0deg);
          }
+      }
+      &:hover .bannerMid__right--hero {
+         transition: all 0.2s ease-in-out;
+         transform: translateX(-5rem);
+         // overflow: hidden;
       }
    }
 
    &__leftWrapper {
       background-color: $secondary;
-      margin-right: -40rem;
-      padding-left: 16rem;
+      margin-right: -30rem;
+      // overflow: hidden;
+
       clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
       //   max-width: max-content;
    }
    &__left {
+      padding-left: 16rem;
    }
    &__heading {
       padding-top: 10rem;
@@ -51,13 +62,17 @@
    }
    &__right {
       overflow: hidden;
+      padding-left: 15rem;
+      // transition: all 0.3s ease-in-out;
       &--heroWrapper {
-         width: max-content;
-         margin-left: 22rem;
+         transform: scale(1.1);
+         // margin-left: 22rem;
+         clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0% 100%);
       }
       &--hero {
-         transform: scale(1.1);
-         clip-path: polygon(16% 0, 100% 0%, 100% 100%, 0% 100%);
+         width: max-content;
+         transform: translateX(0rem);
+         transition: all 0.3s;
       }
    }
 
@@ -74,12 +89,13 @@
       transform: skewX(-20deg);
       cursor: pointer;
       transition: all 0.2s ease-in-out;
-
+      overflow: hidden;
       &--btn {
          color: #222222;
          transition: all 0.2s ease-in-out;
          transform: skew(20deg);
          display: inline-block;
+         // overflow: hidden;
       }
    }
 }
