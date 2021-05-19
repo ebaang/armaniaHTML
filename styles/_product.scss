@@ -114,7 +114,7 @@
          @media (max-width: 472px) {
             grid-template-columns: 1fr 1fr;
          }
-         @media (max-width: 444px) {
+         @media (max-width: 455px) {
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
          }
       }
@@ -204,8 +204,8 @@
       }
    }
 
-   &__popupWrapper {
-   }
+   // &__popupWrapper {
+   // }
    &__popup {
       display: flex;
       color: #707070;
@@ -261,7 +261,7 @@
             @media (max-width: 600px) {
                display: none;
             }
-            @media (max-width: 444px) {
+            @media (max-width: 455px) {
                display: flex;
             }
             @media (max-width: 350px) {
@@ -269,7 +269,7 @@
             }
          }
 
-         @media (max-width: 444px) {
+         @media (max-width: 455px) {
             color: $secondary;
          }
       }

@@ -2023,7 +2023,7 @@ table {
   }
 }
 
-@media (max-width: 444px) {
+@media (max-width: 455px) {
   .product__cards--list {
     -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -2219,7 +2219,7 @@ table {
   }
 }
 
-@media (max-width: 444px) {
+@media (max-width: 455px) {
   .product__popup--wrapper--name {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2233,9 +2233,91 @@ table {
   }
 }
 
-@media (max-width: 444px) {
+@media (max-width: 455px) {
   .product__popup--wrapper {
     color: #0c1555;
   }
+}
+
+.newsletter {
+  padding-top: 5rem;
+  height: 100vh;
+}
+
+.newsletter__content {
+  padding-top: 6rem;
+  background-image: url(../img/newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 60vh;
+}
+
+.newsletter__headline {
+  text-align: center;
+}
+
+.newsletter__header {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-size: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+.newsletter__header--span {
+  color: #fbb71c;
+  text-transform: uppercase;
+  font-family: 'Rajdhani';
+  font-size: 3.5rem;
+}
+
+.newsletter__subheader {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+  width: 500px;
+}
+
+.newsletter__subscribeForm--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.newsletter__subscribeForm--item {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: white;
+}
+
+.newsletter__subscribeForm--item--input {
+  font-size: 1.5rem;
+  border: none;
+  margin: 0.5rem;
+}
+
+.newsletter__btn {
+  background-color: #fbb71c;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.newsletter__btn--cta {
+  color: #292727;
+  font-family: 'Rajdhani';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,79 @@
+.newsletter {
+   padding-top: 5rem;
+   height: 100vh;
+   &__content {
+      padding-top: 6rem;
+      background-image: url(../img/newsletter-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      // color: white;
+      background-attachment: fixed;
+      background-position: center;
+      height: 60vh;
+   }
+
+   &__headline {
+      text-align: center;
+   }
+   &__header {
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Rajdhani';
+      font-size: 3.5rem;
+      padding-bottom: 1rem;
+
+      &--span {
+         color: $primary;
+         text-transform: uppercase;
+         font-family: 'Rajdhani';
+         font-size: 3.5rem;
+      }
+   }
+
+   &__subheader {
+      color: white;
+      font-size: 14px;
+      letter-spacing: 0.3px;
+      line-height: 20px;
+      font-weight: 400;
+      padding-top: 1rem;
+      padding-bottom: 3.5rem;
+      width: 500px;
+
+      // &--wrapper {
+      //    width: 500px;
+      // }
+   }
+
+   &__subscribeForm {
+      &--list {
+         display: flex;
+         justify-content: center;
+      }
+      &--item {
+         padding-left: 1.5rem;
+         padding-right: 1.5rem;
+         background-color: white;
+         &--input {
+            font-size: 1.5rem;
+            border: none;
+            margin: 0.5rem;
+         }
+      }
+   }
+
+   &__btn {
+      background-color: $primary;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      &--cta {
+         color: $grayDark;
+         font-family: 'Rajdhani';
+         font-size: 16px;
+         font-weight: 700;
+         text-transform: uppercase;
+      }
+   }
+}
