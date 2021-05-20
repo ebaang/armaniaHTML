@@ -1,0 +1,64 @@
+.stories {
+   padding-top: 0.5rem;
+   background-color: $bg;
+   padding-bottom: 7rem;
+   &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+   }
+   &__top {
+      font-size: 10.8rem;
+      font-family: 'Open Sans';
+      color: $primary;
+      padding-bottom: 5rem;
+      letter-spacing: -0.7rem;
+   }
+
+   &__story {
+      padding-top: 2rem;
+      text-align: center;
+   }
+   &__storyWrapper {
+      width: 850px;
+      font-family: 'Rajdhani';
+      font-size: 2rem;
+      line-height: 3rem;
+      color: $grayDark;
+   }
+
+   &__profilePhoto {
+      padding-top: 2rem;
+   }
+   &__profilePic {
+      border-radius: 50%;
+      height: 5.2rem;
+      width: 5.2rem;
+   }
+
+   &__name {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      letter-spacing: 3px;
+      padding-top: 0.5rem;
+      color: $gray;
+   }
+
+   &__endspan {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      &--1 {
+         //  margin-left: -20rem;
+         font-size: 4.5rem;
+         color: black;
+      }
+      &--2 {
+         font-size: 4.5rem;
+
+         color: #e8e8e8;
+      }
+   }
+}
