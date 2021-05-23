@@ -2247,7 +2247,7 @@ table {
 
 .newsletter {
   padding-top: 5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.55rem;
   background-color: #f5f5f5;
 }
 
@@ -2561,6 +2561,24 @@ table {
   }
 }
 
+@media (max-width: 595px) {
+  .deal {
+    margin-top: 5.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal {
+    margin-top: 7rem;
+  }
+}
+
+@media (max-width: 338px) {
+  .deal {
+    margin-top: 9.5rem;
+  }
+}
+
 .deal__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2619,7 +2637,30 @@ table {
 
 @media (max-width: 700px) {
   .deal__wrapper {
-    max-width: 510px;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 590px) {
+  .deal__wrapper {
+    max-width: 400px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 455px) {
+  .deal__wrapper {
+    max-width: 310px;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__wrapper {
+    max-width: 250px;
+    padding-bottom: 1rem;
   }
 }
 
@@ -2720,6 +2761,27 @@ table {
   }
 }
 
+@media (max-width: 700px) {
+  .deal__photo {
+    width: 80%;
+    margin-left: 0.2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .deal__photo {
+    margin-top: -1rem;
+    margin-left: -0.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__photo {
+    width: 75%;
+  }
+}
+
 .deal__promo {
   padding-top: 0.8rem;
   height: 6rem;
@@ -2734,6 +2796,28 @@ table {
   font-family: 'Rajdhani';
   font-size: 32px;
   font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .deal__promo {
+    margin-left: -16rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .deal__promo {
+    margin-left: -19rem;
+    margin-top: -2rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__promo {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+    margin-left: -18rem;
+    margin-top: -4rem;
+  }
 }
 
 .deal__endspan {
@@ -2768,6 +2852,30 @@ table {
   }
 }
 
+@media (max-width: 700px) {
+  .deal__endspan {
+    margin-top: 19rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .deal__endspan {
+    margin-top: 20rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .deal__endspan {
+    margin-top: 16rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__endspan {
+    margin-top: 12rem;
+  }
+}
+
 .deal__endspan--1 {
   margin-left: -20rem;
   font-size: 4.5rem;
@@ -2789,6 +2897,31 @@ table {
 @media (max-width: 840px) {
   .deal__endspan--1 {
     margin-left: -4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .deal__endspan--1 {
+    margin-left: -11rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .deal__endspan--1 {
+    margin-left: -16.5rem;
+  }
+}
+
+@media (max-width: 455px) {
+  .deal__endspan--1 {
+    margin-left: -13.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__endspan--1 {
+    margin-left: -11.5rem;
   }
 }
 
@@ -2834,9 +2967,30 @@ table {
   }
 }
 
+@media (max-width: 700px) {
+  .deal__right {
+    margin-left: -3.5rem;
+    margin-top: -5rem;
+  }
+}
+
 .deal__header {
   width: 400px;
   line-height: 4rem;
+}
+
+@media (max-width: 700px) {
+  .deal__header {
+    width: 300px;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__header {
+    width: 280px;
+    margin-left: -1rem;
+    line-height: 3rem;
+  }
 }
 
 .deal__headerSpan {
@@ -2846,6 +3000,33 @@ table {
   font-weight: 900;
   font-size: 15px;
   letter-spacing: 2px;
+}
+
+@media (max-width: 700px) {
+  .deal__headerSpan {
+    margin-left: -7rem;
+    font-size: 16px;
+    margin-top: -1rem;
+  }
+}
+
+@media (max-width: 590px) {
+  .deal__headerSpan {
+    margin-left: 8.9rem;
+    margin-top: none;
+  }
+}
+
+@media (max-width: 455px) {
+  .deal__headerSpan {
+    margin-left: 5.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__headerSpan {
+    margin-left: 4rem;
+  }
 }
 
 .deal__heading {
@@ -2865,48 +3046,15 @@ table {
   }
 }
 
-.deal__cta {
-  display: inline-block;
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-size: 17px;
-  font-family: 'Rajdhani';
-  font-weight: 700;
-  background-color: #fbb71c;
-  padding: 0.5rem 3rem;
-  border-radius: 0;
-  -webkit-transform: skewX(-20deg);
-          transform: skewX(-20deg);
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  overflow: hidden;
-  margin-left: 1.5rem;
+@media (max-width: 700px) {
+  .deal__heading {
+    margin-top: 0rem;
+  }
 }
 
-.deal__cta:hover {
-  -webkit-transform: skew(0deg);
-          transform: skew(0deg);
-}
-
-.deal__cta:hover .deal__cta--btn {
-  -webkit-transform: skew(0deg);
-          transform: skew(0deg);
-}
-
-.deal__cta--btn {
-  color: #383838;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transform: skew(20deg);
-          transform: skew(20deg);
-  display: inline-block;
-  letter-spacing: 1px;
-}
-
-@media (max-width: 1300px) {
-  .deal__cta {
-    margin-top: 2rem;
+@media (max-width: 370px) {
+  .deal__heading {
+    font-size: 2.8rem;
   }
 }
 
@@ -2914,6 +3062,14 @@ table {
   padding-top: 2rem;
   margin-left: -4rem;
   padding-bottom: 4rem;
+}
+
+@media (max-width: 370px) {
+  .deal__countdown {
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+    margin-top: -1rem;
+  }
 }
 
 .deal__time--list {
@@ -2966,6 +3122,64 @@ table {
   color: black;
   font-size: 1.2rem;
   text-transform: uppercase;
+}
+
+.deal__cta {
+  display: inline-block;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-family: 'Rajdhani';
+  font-weight: 700;
+  background-color: #fbb71c;
+  padding: 0.5rem 3rem;
+  border-radius: 0;
+  -webkit-transform: skewX(-20deg);
+          transform: skewX(-20deg);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  margin-left: 1.5rem;
+}
+
+.deal__cta:hover {
+  -webkit-transform: skew(0deg);
+          transform: skew(0deg);
+}
+
+.deal__cta:hover .deal__cta--btn {
+  -webkit-transform: skew(0deg);
+          transform: skew(0deg);
+}
+
+.deal__cta--btn {
+  color: #383838;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: skew(20deg);
+          transform: skew(20deg);
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1300px) {
+  .deal__cta {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .deal__cta {
+    margin-top: -3.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .deal__cta {
+    margin-left: 2.4rem;
+    margin-top: none;
+  }
 }
 
 .stories {
