@@ -1,8 +1,9 @@
 .widget {
-   padding-top: 1rem;
-   padding-bottom: 2rem;
+   padding-top: 3rem;
+   padding-bottom: 20rem;
    background-color: $bg;
-
+   padding-left: 3.5rem;
+   padding-right: 3.5rem;
    &__wrapper {
       padding-top: 3rem;
       border-top: 1px solid #e3e3e3;
@@ -11,6 +12,7 @@
    &__logos {
       display: flex;
       justify-content: space-evenly;
+
       &--list {
       }
    }
