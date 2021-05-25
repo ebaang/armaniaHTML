@@ -1,6 +1,7 @@
 .widget {
    padding-top: 3rem;
-   padding-bottom: 20rem;
+   // padding-bottom: 20rem;
+   padding-bottom: 3rem;
    background-color: $bg;
    padding-left: 3.5rem;
    padding-right: 3.5rem;
@@ -12,8 +13,46 @@
    &__logos {
       display: flex;
       justify-content: space-evenly;
+      @media (max-width: 1200px) {
+         // grid-template-columns: 1fr 1fr 1fr 1fr;
 
+         gap: 7.5rem;
+      }
       &--list {
+      }
+
+      &--item {
+         &--1 {
+            display: block;
+         }
+         &--2 {
+            display: block;
+         }
+         &--3 {
+            display: block;
+         }
+         &--4 {
+            // @media (max-width: 1200px) {
+            //    display: none;
+            // }
+         }
+         &--5 {
+            @media (max-width: 1200px) {
+               display: none;
+            }
+         }
+         &--6 {
+            @media (max-width: 1200px) {
+               display: none;
+            }
+         }
+      }
+   }
+
+   &__photo {
+      @media (max-width: 1200px) {
+         text-align: center;
+         justify-content: center;
       }
    }
 }
